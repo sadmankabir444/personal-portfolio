@@ -122,7 +122,7 @@ const HeroSection = () => {
                 <div className="absolute inset-0 bg-gradient-to-b from-slate-700/50 to-slate-900/50"></div>
                 <Image
                   alt="Fahim Developer Portrait"
-                  src="https://i.ibb.co.com/N2Ym4fZY/IMG-0189.jpg"
+                  src="https://i.ibb.co.com/Q73cXWq7/IMG-20210606-235551.jpg"
                   className="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-700"
                   width={450}
                   height={450}
