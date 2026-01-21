@@ -74,25 +74,25 @@ const ContactSection = () => {
               <div className="mt-8 flex gap-4">
                 <a 
                   className="w-10 h-10 rounded-full border border-slate-600 bg-slate-800/50 flex items-center justify-center text-primary hover:bg-primary hover:text-white hover:border-primary transition-all duration-300 shadow-md" 
-                  href="#"
+                  href="https://github.com/sadmankabir444"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <i className="fab fa-github"></i>
                 </a>
                 <a 
                   className="w-10 h-10 rounded-full border border-slate-600 bg-slate-800/50 flex items-center justify-center text-primary hover:bg-primary hover:text-white hover:border-primary transition-all duration-300 shadow-md" 
-                  href="#"
+                  href="https://www.linkedin.com/in/mohammad-fahim-2219a5229/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <i className="fab fa-linkedin-in"></i>
                 </a>
                 <a 
                   className="w-10 h-10 rounded-full border border-slate-600 bg-slate-800/50 flex items-center justify-center text-primary hover:bg-primary hover:text-white hover:border-primary transition-all duration-300 shadow-md" 
-                  href="#"
-                >
-                  <i className="fab fa-twitter"></i>
-                </a>
-                <a 
-                  className="w-10 h-10 rounded-full border border-slate-600 bg-slate-800/50 flex items-center justify-center text-primary hover:bg-primary hover:text-white hover:border-primary transition-all duration-300 shadow-md" 
-                  href="#"
+                  href="https://www.facebook.com/sadman.kabir.himel"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <i className="fab fa-facebook-f"></i>
                 </a>
