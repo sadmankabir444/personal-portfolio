@@ -121,7 +121,7 @@ const HeroSection = () => {
               </Link>
               <Link 
                 className="inline-flex items-center justify-center px-8 py-4 font-semibold text-text-sub transition-all duration-200 bg-transparent border border-border-color rounded-xl hover:bg-slate-100/10 hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-500 focus:ring-offset-slate-900"
-                href="https://drive.google.com/file/d/1uQKgfLmiAEqT4MAMFGNEbMyRYvV_zjZd/view?usp=sharing"
+                href="https://drive.google.com/file/d/1nEgJ8s6CAY2hVSGPK4FHYgo_lVnurfgh/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
               >
