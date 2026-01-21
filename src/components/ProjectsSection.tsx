@@ -9,7 +9,7 @@ const ProjectsSection = () => {
       description: "A comprehensive loan management platform that streamlines the entire lending process from application to approval and tracking.",
       image: "https://i.ibb.co.com/Z1hvTzYj/Screenshot-2026-01-05-180151.png",
       technologies: ["React", "Node.js", "MongoDB", "Express"],
-      link: "https://dreamy-blancmange-7324a2.netlify.app/"
+      link: "https://jovial-medovik-6583cd.netlify.app/"
     },
     {
       id: 2,

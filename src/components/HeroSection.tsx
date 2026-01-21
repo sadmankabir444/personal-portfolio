@@ -7,10 +7,48 @@ import Link from "next/link";
 const HeroSection = () => {
   return (
     <section id="hero" className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden bg-grid-pattern">
-      {/* Animated background elements */}
+      {/* Enhanced animated background elements */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden -z-10 pointer-events-none">
-        <div className="absolute -top-[20%] -left-[10%] w-[600px] h-[600px] rounded-full bg-primary/20 dark:bg-primary/10 blur-[120px] mix-blend-screen dark:mix-blend-lighten"></div>
-        <div className="absolute top-[40%] -right-[10%] w-[500px] h-[500px] rounded-full bg-secondary/20 dark:bg-secondary/10 blur-[120px] mix-blend-screen dark:mix-blend-lighten"></div>
+        <motion.div 
+          className="absolute -top-[20%] -left-[10%] w-[600px] h-[600px] rounded-full bg-primary/20 dark:bg-primary/10 blur-[120px] mix-blend-screen dark:mix-blend-lighten"
+          animate={{
+            scale: [1, 1.1, 1],
+            x: [0, 20, 0],
+            y: [0, -20, 0]
+          }}
+          transition={{
+            duration: 10,
+            repeat: Infinity,
+            ease: "easeInOut"
+          }}
+        />
+        <motion.div 
+          className="absolute top-[40%] -right-[10%] w-[500px] h-[500px] rounded-full bg-secondary/20 dark:bg-secondary/10 blur-[120px] mix-blend-screen dark:mix-blend-lighten"
+          animate={{
+            scale: [1, 1.05, 1],
+            x: [0, -15, 0],
+            y: [0, 15, 0]
+          }}
+          transition={{
+            duration: 12,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: 1
+          }}
+        />
+        <motion.div 
+          className="absolute top-[20%] left-[30%] w-[200px] h-[200px] rounded-full bg-purple-500/10 blur-[80px]"
+          animate={{
+            scale: [1, 1.2, 1],
+            opacity: [0.2, 0.4, 0.2]
+          }}
+          transition={{
+            duration: 8,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: 0.5
+          }}
+        />
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
@@ -83,7 +121,9 @@ const HeroSection = () => {
               </Link>
               <Link 
                 className="inline-flex items-center justify-center px-8 py-4 font-semibold text-text-sub transition-all duration-200 bg-transparent border border-border-color rounded-xl hover:bg-slate-100/10 hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-500 focus:ring-offset-slate-900"
-                href="#"
+                href="https://drive.google.com/file/d/1uQKgfLmiAEqT4MAMFGNEbMyRYvV_zjZd/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Download Resume
                 <i className="fas fa-download ml-2 text-primary"></i>
@@ -123,7 +163,7 @@ const HeroSection = () => {
                 <Image
                   alt="Fahim Developer Portrait"
                   src="https://i.ibb.co.com/Q73cXWq7/IMG-20210606-235551.jpg"
-                  className="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-700"
+                  className="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-700 brightness-90 contrast-110 saturate-110"
                   width={450}
                   height={450}
                 />

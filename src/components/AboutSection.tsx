@@ -69,22 +69,92 @@ const AboutSection = () => {
             </motion.div>
           </motion.div>
           <motion.div variants={item} className="flex justify-center relative">
-            <div className="w-64 h-64 relative animate-pulse">
-              <div className="absolute inset-0 rounded-full border border-secondary/20 rotate-45 transform scale-110 shadow-[0_0_15px_rgba(74,222,128,0.2)]"></div>
-              <div className="absolute inset-0 rounded-full border border-primary/20 -rotate-12 transform scale-90 shadow-[0_0_15px_rgba(56,189,248,0.2)]"></div>
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-4 h-4 bg-background-alt rounded-full shadow-[0_0_20px_rgba(56,189,248,0.6)] ring-2 ring-primary"></div>
-              </div>
-              <div className="absolute top-10 left-10 w-3 h-3 bg-primary rounded-full blur-[1px] shadow-[0_0_10px_rgba(56,189,248,0.8)]"></div>
-              <div className="absolute bottom-10 right-10 w-3 h-3 bg-secondary rounded-full blur-[1px] shadow-[0_0_10px_rgba(74,222,128,0.8)]"></div>
+            <motion.div 
+              className="w-64 h-64 relative"
+              whileHover={{ scale: 1.05 }}
+              transition={{ type: "spring", stiffness: 300 }}
+            >
+              <motion.div 
+                className="absolute inset-0 rounded-full border border-secondary/20 rotate-45 transform scale-110 shadow-[0_0_15px_rgba(74,222,128,0.2)]"
+                animate={{
+                  rotate: [0, 45, 0],
+                }}
+                transition={{
+                  duration: 8,
+                  repeat: Infinity,
+                  ease: "linear"
+                }}
+              ></motion.div>
+              <motion.div 
+                className="absolute inset-0 rounded-full border border-primary/20 -rotate-12 transform scale-90 shadow-[0_0_15px_rgba(56,189,248,0.2)]"
+                animate={{
+                  rotate: [0, -45, 0],
+                }}
+                transition={{
+                  duration: 10,
+                  repeat: Infinity,
+                  ease: "linear",
+                  delay: 0.5
+                }}
+              ></motion.div>
+              <motion.div 
+                className="absolute inset-0 flex items-center justify-center"
+                animate={{
+                  scale: [1, 1.1, 1]
+                }}
+                transition={{
+                  duration: 4,
+                  repeat: Infinity,
+                  ease: "easeInOut"
+                }}
+              >
+                <motion.div 
+                  className="w-4 h-4 bg-background-alt rounded-full shadow-[0_0_20px_rgba(56,189,248,0.6)] ring-2 ring-primary"
+                  animate={{
+                    scale: [1, 1.5, 1],
+                    opacity: [0.8, 1, 0.8]
+                  }}
+                  transition={{
+                    duration: 2,
+                    repeat: Infinity,
+                    ease: "easeInOut"
+                  }}
+                ></motion.div>
+              </motion.div>
+              <motion.div 
+                className="absolute top-10 left-10 w-3 h-3 bg-primary rounded-full blur-[1px] shadow-[0_0_10px_rgba(56,189,248,0.8)]"
+                animate={{
+                  y: [0, -5, 0],
+                  opacity: [0.7, 1, 0.7]
+                }}
+                transition={{
+                  duration: 2,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                  delay: 0.2
+                }}
+              ></motion.div>
+              <motion.div 
+                className="absolute bottom-10 right-10 w-3 h-3 bg-secondary rounded-full blur-[1px] shadow-[0_0_10px_rgba(74,222,128,0.8)]"
+                animate={{
+                  y: [0, 5, 0],
+                  opacity: [0.7, 1, 0.7]
+                }}
+                transition={{
+                  duration: 2.5,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                  delay: 0.3
+                }}
+              ></motion.div>
               <Image
                 alt="Fahim Professional Portrait"
-                src="https://i.ibb.co.com/LD9ccg94/20260105-161451.jpg"
-                className="w-full h-full rounded-full object-cover object-center opacity-90 brightness-110"
+                src="https://i.ibb.co.com/N2Ym4fZY/IMG-0189.jpg"
+                className="w-full h-full rounded-full object-cover object-center opacity-90 brightness-100 contrast-105 saturate-110"
                 width={256}
                 height={256}
               />
-            </div>
+            </motion.div>
           </motion.div>
         </motion.div>
       </div>
